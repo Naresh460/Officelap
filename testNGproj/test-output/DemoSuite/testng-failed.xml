@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="Age_column" value="Age"/>
+  <parameter name="Name" value="Name"/>
+  <test thread-count="5" name="Login opration(failed)">
+    <classes>
+      <class name="test.test.Excelmulti">
+        <methods>
+          <include name="excelMultirecords" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.test.Excelmulti -->
+    </classes>
+  </test> <!-- Login opration(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="Annotation">
+  <test name="Test">
+    <classes>
+      <class name="test.test.Annotationdemo">
+<methods>
+<include name="testdemo"> </include>
+
+</methods>
+
+</class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
