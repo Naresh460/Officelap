@@ -6,11 +6,11 @@
     <parameter name="text" value="facebook"/>
     <parameter name="url" value="https://www.google.com"/>
     <classes>
-      <class name="test.test.Parametersdemo">
+      <class name="com.test.Parametersdemo">
         <methods>
           <include name="enterText" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.test.Parametersdemo -->
+      </class> <!-- com.test.Parametersdemo -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Annotation] -->

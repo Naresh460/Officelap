@@ -1,4 +1,4 @@
-package test.test;
+package com.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -6,12 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import net.bytebuddy.build.Plugin.Factory.UsingReflection.Priority;
 
 public class Parametersdemo {
 
@@ -47,16 +45,18 @@ public class Parametersdemo {
 		
 		@Parameters("url")
 		@Test (priority = 2)
-		 public void urlAccess(String url) {
+		 public void urlAccess(String url) throws InterruptedException {
+			Thread.sleep(2000);
 			 driver.get(url);
-			 
+			 Thread.sleep(2000);
 		 }
 		
 		@Parameters("text")
 		@Test (priority = 3)
-		 public void enterText(String textt) {
+		 public void enterText(String textt) throws InterruptedException {
 			 driver.findElement(By.name("q")).sendKeys(textt);
-			 driver.findElement(By.name("btnK")).sendKeys(Keys.ENTER);
+			 Thread.sleep(2000);
+			 driver.findElement(By.name("btnK")).submit();
 			 
 			 			 
 		 }

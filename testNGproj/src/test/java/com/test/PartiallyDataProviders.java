@@ -1,4 +1,4 @@
-package test.test;
+package com.test;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -10,11 +10,22 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DataProviderclass {
-	@Test (dataProvider = "data values2", dataProviderClass = DataSupplier.class)
+public class PartiallyDataProviders {
+	@Test (dataProvider = "data values")
 	public void method1(String name) {		
 		System.out.println("Name is-->" +name);
 	}
 	
+	@DataProvider(name="data values",indices = {0,2})
+	public String[] dataProvider() {   // if String return type
+		String[] data = new String[] {
+				"Naresh",
+				"Suresh",
+				"Mahesh"				
+		};
+		return data;		
+	}
+	
+
 }
 

@@ -1,2 +1,2 @@
 //@org.testng.annotations.Ignore
-package test.test;
+package com.test;

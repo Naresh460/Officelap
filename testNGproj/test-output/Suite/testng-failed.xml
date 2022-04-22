@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GCAccess(failed)">
     <classes>
-      <class name="test.test.ParallelExecution">
+      <class name="com.cm.AccessMember">
         <methods>
-          <include name="excelMultirecords" invocation-numbers="0 1"/>
+          <include name="accessMember"/>
         </methods>
-      </class> <!-- test.test.ParallelExecution -->
+      </class> <!-- com.cm.AccessMember -->
+      <class name="com.cm.NavtoActivityrecord">
+        <methods>
+          <include name="navToActivityrecordsection"/>
+        </methods>
+      </class> <!-- com.cm.NavtoActivityrecord -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- GCAccess(failed) -->
 </suite> <!-- Failed suite [Suite] -->

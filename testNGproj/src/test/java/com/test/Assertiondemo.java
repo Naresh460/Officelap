@@ -1,4 +1,4 @@
-package test.test;
+package com.test;
 
 import static org.testng.Assert.*;
 

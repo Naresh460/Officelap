@@ -3,7 +3,7 @@
 <suite name="Suite" data-provider-thread-count="2">
   <test  name="Test">
     <classes>
-      <class name="test.test.ParallelExecution"/>
+      <class name="com.test.ParallelExecution"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

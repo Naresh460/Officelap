@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.test.Timeout">
+      <class name="com.shushil.SuushulPage2">
         <methods>
-          <include name="timeOut"/>
+          <include name="testmethod"/>
         </methods>
-      </class> <!-- test.test.Timeout -->
+      </class> <!-- com.shushil.SuushulPage2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

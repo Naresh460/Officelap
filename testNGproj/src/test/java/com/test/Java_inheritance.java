@@ -1,4 +1,4 @@
-package test.test;
+package com.test;
 
 public class Java_inheritance {
 	String name="naresh";

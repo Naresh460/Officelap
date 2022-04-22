@@ -1,4 +1,4 @@
-package test.test;
+package com.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,14 +6,16 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BrowserLaunch {
-	static WebDriver driver;
+public class Timeout {
 	
-	public static void main(String[] args) {
+	@Test
+	public static void timeOut() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
+		Thread.sleep(3000);
+		driver.get("https://www.facebook.com");
+		driver.quit();
 		
 	}
-	
 
 }

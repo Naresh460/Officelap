@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="GCAccess">
+<classes>
+<class name="com.cm.LogintoGC">
+<methods>
+<include name="loginGC"/>
+</methods>
+</class>
+<class name="com.cm.AccessMember">
+<methods>
+<include name="accessMember"/>
+</methods>
+</class>
+<class name="com.cm.NavtoActivityrecord">
+<methods>
+<include name="navToActivityrecordsection"/>
+</methods>
+</class>
+<class name="com.cm.NotesAdd">
+<methods>
+<include name="addNotes"/>
+</methods>
+</class>
+</classes>
+  </test> <!-- GCAccess -->
+</suite> <!-- Suite -->
