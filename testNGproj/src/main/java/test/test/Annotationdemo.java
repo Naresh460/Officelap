@@ -7,9 +7,7 @@ public class Annotationdemo {
 	@Test
 	public void testdemo() {
 		System.out.println("Test");
-		System.out.println("Test");
 	}
-
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("Before Method");
